@@ -9,7 +9,7 @@ function ArticleContainer({ homeArticles}) {
       <h1>Welcome to News Reader!</h1>
       <section className="card-grid">
         {homeArticles.map((articleDetails, index) => {
-          return <ArticleCard id={index} image={articleDetails.multimedia[2].url} title={articleDetails.title} category={articleDetails.section} />
+          return <ArticleCard id={index} key={index} image={articleDetails.multimedia[2].url} title={articleDetails.title} category={articleDetails.section} />
         })}
       </section>
     </div>
