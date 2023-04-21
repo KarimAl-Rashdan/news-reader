@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# New York Times Reader
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+New York Times News Reader was built using the [NY Times Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview) that features live news and a multitude of categories to read recent articles by the journalists of The New York Times. 
 
-## Available Scripts
+<img width="621" alt="Screen Shot 2022-09-23 at 9 15 50 AM" src="https://user-images.githubusercontent.com/108764281/233652307-32115713-f90f-4568-a030-c493f63cd3a4.png">
 
-In the project directory, you can run:
+<img width="622" alt="Screen Shot 2022-09-23 at 9 16 34 AM" src="https://user-images.githubusercontent.com/108764281/233652342-648c5a68-dbb6-43f8-9192-786fae346a1b.png">
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Management 
+- Spec can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe)
+- Github project board can be found [here](https://github.com/users/KarimAl-Rashdan/projects/10)
+- Wireframe =
+<img width="622" alt="wireframe" src="https://user-images.githubusercontent.com/108764281/233537736-d7cf04c3-351c-4bd0-b08b-0dea81f84d78.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies 
+- React 
+- React router 
+- HTML 
+- CSS 
 
-### `npm run build`
+## Installation 
+- Clone down this repo in your command line 
+- Run `cd news-reader` 
+- Run `npm i` to install dependencies
+- Run `npm start` to view the application in action 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Author 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Karim Al-Rashdan](https://github.com/KarimAl-Rashdan)
 
-### `npm run eject`
+## Features 
+- Filter by section to view articles within a particular genre
+- Responsive Design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Additions 
+- Add a search functionality to search articles by title
+- Implement Accessibility 
+- Extensive cypress testing

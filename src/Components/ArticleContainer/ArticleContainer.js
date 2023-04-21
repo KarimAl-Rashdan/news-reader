@@ -26,7 +26,7 @@ function ArticleContainer({  homeArticles}) {
     return setFilteredArticles(filterHome)
   }
   return (
-    <div>
+    <div className="articleContainer">
       <h1>Welcome to News Reader!</h1>
       <input type="list" list="categories" placeholder='Categories' onChange={(event) => filterArticles(event.target.value)}/>
       <datalist id="categories">

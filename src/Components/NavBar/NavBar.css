@@ -7,11 +7,10 @@ a {
 .returnHome {
   display: flex;
   width:100%;
-  border: 2px solid red;
 }
 
 
-
+/*laptop view */
 @media screen and (min-width: 1024px) {
   a {
     width:10%;
