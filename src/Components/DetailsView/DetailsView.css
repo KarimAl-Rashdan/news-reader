@@ -1,0 +1,24 @@
+.detailsContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+}
+.posterDetails {
+  padding: 5%;
+  width: 75%;
+  background-color: aliceblue;
+  opacity: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+  .posterDetails {
+    width: 50%;
+  }
+} 
