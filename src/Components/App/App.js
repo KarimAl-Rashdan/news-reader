@@ -1,13 +1,18 @@
-// import logo from './logo.svg';
 import './App.css';
 import { Route } from "react-router-dom"
 import NavBar from '../NavBar/NavBar';
+import ArticleContainer from '../ArticleContainer/ArticleContainer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <h1>Welcome to News Reader!</h1>
+      <Route
+        exact path="/"
+        render={() =>
+          <ArticleContainer /> 
+        }
+      />
     </div>
   );
 }
