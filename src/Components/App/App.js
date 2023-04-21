@@ -4,6 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import ArticleContainer from '../ArticleContainer/ArticleContainer';
 import { useState, useEffect } from "react"
 import fetchData from '../../apiCalls';
+import DetailsView from '../DetailsView/DetailsView';
 
 function App() {
   const [homeArticles, setHomeArticles] = useState([])
@@ -25,6 +26,14 @@ function App() {
         render={() =>
           <ArticleContainer homeArticles={homeArticles}/> 
         }
+      />
+      <Route
+        exact path="/:id"
+        render={({ match }) => {
+          return (
+            <DetailsView id={match.params.id} homeArticles={homeArticles}/>
+          )
+        }}
       />
     </div>
   );
