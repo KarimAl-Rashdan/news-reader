@@ -8,41 +8,41 @@ import DetailsView from '../DetailsView/DetailsView';
 
 function App() {
   const [homeArticles, setHomeArticles] = useState([])
-  const [categories, setCategories] = useState([])
-  const [filteredArticles, setFilteredArticles] = useState([])
+  // const [categories, setCategories] = useState([])
+  // const [filteredArticles, setFilteredArticles] = useState([])
 
   useEffect(() => {
     fetchData()
     .then((data) => {
       setHomeArticles(data.results)
-      let finalList=[]
-      const options = data.results.map(article => {
-        if(!finalList.includes(article.section)) {
-          finalList.push(article.section)
-        }
-      })
-      setCategories(finalList)
+      // let finalList=[]
+      // const options = data.results.map(article => {
+      //   if(!finalList.includes(article.section)) {
+      //     finalList.push(article.section)
+      //   }
+      // })
+      // setCategories(finalList)
     })
     .catch((error) => console.log(error))
   }, [])
 
-  const filterArticles = (category) => {
-    const filterHome = homeArticles.filter((article) => article.section === category)
-    return setFilteredArticles(filterHome)
-  }
+  // const filterArticles = (category) => {
+  //   const filterHome = homeArticles.filter((article) => article.section === category)
+  //   return setFilteredArticles(filterHome)
+  // }
   return (
     <div className="App">
       <NavBar />
-      <input type="list" list="categories" placeholder='Categories'  onChange={(event) => filterArticles(event.target.value)}/>
+      {/* <input type="list" list="categories" placeholder='Categories'  onChange={(event) => filterArticles(event.target.value)}/>
       <datalist id="categories">
         {categories.map((category,index) => 
             <option key={index} value={category}>{category}</option>
         )}
-      </datalist>
+      </datalist> */}
       <Route
         exact path="/"
         render={() =>
-          <ArticleContainer filteredArticles={filteredArticles} homeArticles={homeArticles}/> 
+          <ArticleContainer  homeArticles={homeArticles}/> 
         }
       />
       <Route
