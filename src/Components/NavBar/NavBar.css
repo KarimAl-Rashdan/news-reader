@@ -1,0 +1,19 @@
+img {
+  width:100%
+}
+a {
+  width: 20%
+}
+.returnHome {
+  display: flex;
+  width:100%;
+  border: 2px solid red;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  a {
+    width:10%;
+  }
+}
