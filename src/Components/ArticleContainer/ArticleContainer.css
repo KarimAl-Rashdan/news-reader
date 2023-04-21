@@ -5,7 +5,14 @@
     width: 100%;
     justify-items: center;
   }
-  
+  .articleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+  width:20%;
+}
 
 
 
