@@ -26,6 +26,14 @@ function App() {
           <ArticleContainer homeArticles={homeArticles}/> 
         }
       />
+      <Route
+        exact path="/:id"
+        render={({ match }) => {
+          return (
+            <DetailsView id={match.params.id} />
+          )
+        }}
+      />
     </div>
   );
 }
